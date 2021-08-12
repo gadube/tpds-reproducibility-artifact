@@ -2,11 +2,11 @@ This digital artifact is organized as follows:
 
 ReproducibilityChallenge/
   compile/
-    gpuinit.sh           - MemXCT compilation script
-    cpuinit.sh           - MemXCT compilation script
-    p100init.sh          - MemXCT compilation script
-    v100init.sh          - MemXCT compilation script
-    vectorization.txt    - vectorization report 
+    gpuinit.sh           - MemXCT compilation script, Usage: source ./gpuinit.sh
+    cpuinit.sh           - MemXCT compilation script, Usage: source ./cpuinit.sh
+    p100init.sh          - MemXCT compilation script, Usage: source ./p100init.sh
+    v100init.sh          - MemXCT compilation script, Usage: source ./v100init.sh
+    vectorization.txt    - vectorization report
     mpi_build_install.sh - MPI install and build/ create modulefile script
     environment.txt      - Environment of master node at run
     README.txt           - Explanation of how scripts work
@@ -29,12 +29,12 @@ ReproducibilityChallenge/
       README.txt       - Explanation of how scripts work
   run/
     output/
-      scaling.out          - output from strong scaling tests
-      k80gpu.out           - output from single CPU-GPU tests on k80
-      p100gpu.out          - output from single CPU-GPU tests on p100
-      v100gpu.out          - output from single CPU-GPU tests on v100
-      recon_CDS1.bin       - output reconstruction image binary file for CDS1
-      recon_CDS2.bin       - output reconstruction image binary file for CDS2
+      scaling.out         - output from strong scaling tests
+      k80gpu.out          - output from single CPU-GPU tests on k80
+      p100gpu.out         - output from single CPU-GPU tests on p100
+      v100gpu.out         - output from single CPU-GPU tests on v100
+      recon_CDS1.bin      - output reconstruction image binary file for CDS1
+      recon_CDS2.bin      - output reconstruction image binary file for CDS2
     scripts/
       azure_scaling.pbs   - PBSPro script to start batch job for scaling
       k80run.sh           - Run script for CPU-GPU Performance (K80)
@@ -47,4 +47,3 @@ ReproducibilityChallenge/
 
 NOTE: README.txt files in individual directories contain specific information on
       the scripts and outputs in that specific file.
-
